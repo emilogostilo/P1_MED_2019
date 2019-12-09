@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    tools:context="com.example.chik.p1astudio.Article">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum risus a rutrum rutrum. Nullam congue finibus ullamcorper. Etiam a nulla sed lacus semper commodo in at quam. Aliquam laoreet mi quis dapibus accumsan. Vivamus consequat sodales mi, sit amet porta est maximus in. Cras sed luctus arcu. Etiam id iaculis justo. Morbi viverra consectetur dui, nec finibus risus venenatis at. Nulla ac nibh sit amet massa iaculis ullamcorper. Etiam sed orci viverra, efficitur urna nec, suscipit sem. In ullamcorper sapien quis feugiat commodo. Proin erat neque, ultricies id porta et, convallis sed ligula. Maecenas lacus nisl, bibendum non dui et, finibus sollicitudin nisl. \n
+
+Aliquam erat volutpat. Donec non libero enim. Quisque est magna, viverra iaculis tortor dignissim, egestas condimentum nulla. Suspendisse potenti. Quisque porta justo sem, nec feugiat diam maximus at. Morbi fringilla velit ut tortor mollis venenatis. Duis nec fermentum tellus. Nunc eu elementum urna, at ultricies sapien. Aliquam molestie lectus vel varius sagittis. Sed rutrum condimentum mollis. Morbi dignissim non tortor vel pharetra. Praesent laoreet, nisl quis facilisis ultrices, mauris elit rutrum nibh, et egestas sapien dolor ac sem. Ut rutrum nunc lectus, in tempus mi condimentum a. Mauris a varius ligula.\n"
+                android:textColor="#000"
+
+                />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:text="Klik her for mere :)"
+
+                />
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/test"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Praesent et metus aliquam diam feugiat vulputate. Sed gravida lacus dignissim sapien rhoncus, id cursus lorem blandit. Praesent ultricies sagittis nunc, in porttitor ligula varius sed. Etiam eget dapibus dolor. Maecenas vestibulum porta hendrerit. Nam nec enim pretium, condimentum lectus sit amet, mattis leo. Fusce convallis lectus eget orci consequat, fermentum fringilla tellus consequat. Mauris mollis cursus mi, vel maximus leo lacinia sit amet. Maecenas convallis, neque vitae dictum vestibulum, felis erat condimentum mauris, ac venenatis quam libero condimentum lacus. In non tortor bibendum, interdum erat et, sodales purus. Mauris condimentum mi magna, in tristique lacus tempor vitae. Aliquam mollis viverra velit non condimentum. Pellentesque faucibus dolor turpis. Integer non nulla ac erat congue cursus ac tristique risus. Aenean malesuada lacus a nisi lacinia ultricies.
+
+Nam ullamcorper, est a sollicitudin dictum, tellus nibh suscipit ligula, a tempus nisi lectus non ex. Suspendisse eu convallis felis, ut facilisis lectus. Quisque pellentesque egestas orci nec porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quam massa, fermentum molestie quam accumsan, dictum efficitur leo. Sed quis justo eu magna vulputate aliquet a quis quam. Quisque mi neque, euismod quis euismod non, malesuada eget risus. In tempor massa eget dolor maximus blandit. Phasellus mattis mattis ultricies."
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
