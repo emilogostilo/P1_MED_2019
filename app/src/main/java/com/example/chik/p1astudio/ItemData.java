@@ -5,10 +5,10 @@ public class ItemData {
     private String description;
     private int image;
 
-    public ItemData(String name, String description, int thumbnail){
+    public ItemData(String name, String description, int image){
             this.name = name;
             this.description = description;
-            this.image = thumbnail;
+            this.image = image;
         }
 
     public String getName() {

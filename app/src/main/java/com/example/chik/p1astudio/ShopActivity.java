@@ -10,7 +10,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Shop extends AppCompatActivity {
+public class ShopActivity extends AppCompatActivity {
     Toolbar mToolbar;
     RecyclerView mRecyclerView;
     List<ItemData> mItemList;
@@ -24,15 +24,15 @@ public class Shop extends AppCompatActivity {
         mToolbar = findViewById(R.id.toolbar);
         mToolbar.setTitle(getResources().getString(R.string.app_name));
         mRecyclerView = findViewById(R.id.recyclerview);
-        GridLayoutManager mGridlayoutManager = new GridLayoutManager(Shop.this, 2);
+        GridLayoutManager mGridlayoutManager = new GridLayoutManager(ShopActivity.this, 2);
         mRecyclerView.setLayoutManager(mGridlayoutManager);
 
         mItemList = new ArrayList<>();
         mItemData = new ItemData("Book", getString(R.string.description_item_book),R.drawable.book);
         mItemList.add(mItemData);
 
-        MyAdapter myAdapter = new MyAdapter(Shop.this, mItemList);
-        mRecyclerView.setAdapter(myAdapter);
+        ItemAdapter itemAdapter = new ItemAdapter(ShopActivity.this, mItemList);
+        mRecyclerView.setAdapter(itemAdapter);
 
 
     }

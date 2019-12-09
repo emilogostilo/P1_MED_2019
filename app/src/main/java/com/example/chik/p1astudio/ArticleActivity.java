@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class Article extends AppCompatActivity {
+public class ArticleActivity extends AppCompatActivity {
     private Button button;
 
     @Override
@@ -36,7 +36,7 @@ public class Article extends AppCompatActivity {
 
     }
     public void openActivity2(){
-        Intent intent = new Intent (this, Shop.class);
+        Intent intent = new Intent (this, ShopActivity.class);
         startActivity(intent);
 
     }

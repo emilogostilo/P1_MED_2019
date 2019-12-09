@@ -1,6 +1,7 @@
 package com.example.chik.p1astudio;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,17 +11,17 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter< ItemViewHolder > {
+public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
 
     private Context mContext;
     private List<ItemData> mItemList;
 
-    MyAdapter(Context mContext, List<ItemData> mItemList) {
+    ItemAdapter(Context mContext, List<ItemData> mItemList) {
         this.mContext = mContext;
         this.mItemList = mItemList;
     }
 
-    @Override
+    @NonNull
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recylerview_row_item,parent,false);
         return new ItemViewHolder(mView);
@@ -45,7 +46,7 @@ class ItemViewHolder extends RecyclerView.ViewHolder {
     ItemViewHolder(View itemView) {
         super(itemView);
 
-        ImageView mImage = itemView.findViewById(R.id.ivImage);
-        TextView mTitle = itemView.findViewById(R.id.tvTitle);
+        mImage = itemView.findViewById(R.id.ivImage);
+        mTitle = itemView.findViewById(R.id.tvTitle);
     }
 }
