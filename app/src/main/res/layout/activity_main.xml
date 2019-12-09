@@ -57,6 +57,12 @@ Aliquam erat volutpat. Donec non libero enim. Quisque est magna, viverra iaculis
 
 Nam ullamcorper, est a sollicitudin dictum, tellus nibh suscipit ligula, a tempus nisi lectus non ex. Suspendisse eu convallis felis, ut facilisis lectus. Quisque pellentesque egestas orci nec porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quam massa, fermentum molestie quam accumsan, dictum efficitur leo. Sed quis justo eu magna vulputate aliquet a quis quam. Quisque mi neque, euismod quis euismod non, malesuada eget risus. In tempor massa eget dolor maximus blandit. Phasellus mattis mattis ultricies."
                 />
+            <ImageButton
+                android:id="@+id/thumb_button_1"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:src="@drawable/book"
+                />
         </LinearLayout>
     </ScrollView>
 
