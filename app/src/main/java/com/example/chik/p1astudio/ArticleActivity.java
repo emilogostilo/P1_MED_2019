@@ -13,7 +13,7 @@ import android.widget.VideoView;
 public class ArticleActivity extends AppCompatActivity {
     private Button button;
     private ImageButton statistik;
-    
+
 
     @Override
         protected void onCreate(Bundle savedInstanceState) {
