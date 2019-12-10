@@ -23,8 +23,8 @@
         android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="0dp"
         android:scrollbars="none">
 
         <LinearLayout
@@ -56,23 +56,10 @@
 
                 />
 
-            <FrameLayout
-                android:layout_width="400dp"
-                android:layout_height="200dp"
-                android:layout_below="@+id/test"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp">
 
 
-                <VideoView
-                    android:id="@+id/video_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
 
-            </FrameLayout>
-
-
-            <Button
+            <ImageButtonButton
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,28 +89,28 @@ Men her vil der fokuseret på et nyere koncept inden for droneteknologi, der ogs
 
 
             <TextView
-                android:layout_width="316dp"
+                android:layout_width="235dp"
                 android:layout_height="wrap_content"
 
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:text="Pros:
-                \n‣ Droner kan aflevere pakker meget hurtigt
-                \n‣ Droner kan aflevere pakker til næsten hvilken som helst lokation
-                \n‣ Droner er miljøvenlige
+                android:text="Pros:\n
+                \n‣ Droner kan aflevere pakker meget hurtigt \n
+                \n‣ Droner kan aflevere pakker til næsten hvilken som helst lokation \n
+                \n‣ Droner er miljøvenlige \n
                 \n‣ Dronelevering tilbyder et mere sikkert system"
                 android:textColor="#000"></TextView>
 
             <TextView
-                android:layout_width="276dp"
+                android:layout_width="211dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="400dp"
-                android:layout_marginTop="-105dp"
-                android:text="Cons:
-                \n‣ Droner er dyrer at producere
-                \n‣ Yderligere udvikling på teknologien kan være nødvendig før det opnår det optimale potentiale
-                \n‣ Droner er mere begrænset i deres last kapacitet
-                \n‣ Eksterne årsager som vejr kan have indflydelse på leveringen
+                android:layout_marginTop="-199dp"
+                android:text="Cons: \n
+                \n‣ Droner er dyrer at producere \n
+                \n‣ Yderligere udvikling på teknologien kan være nødvendig før det opnår det optimale potentiale \n
+                \n‣ Droner er mere begrænset i deres last kapacitet \n
+                \n‣ Eksterne årsager som vejr kan have indflydelse på leveringen \n
                 \n‣ Kan overtræde dit privatliv"
 
 
@@ -145,7 +132,10 @@ Droner bliver ikke påvirket af trafik og har derfor en lavere fejlrate med hens
 Droner tilbyder dog også et mere miljøvenligt alternativ når du bestiller din pakke. På korte individuelle pakke leverancer er droner ikke kun hurtigere men også det miljøansvarlige valg, især ved brug af grøn energi."
 
                 android:layout_marginTop="10dp"
-                android:textColor="#000"></TextView>
+
+                android:textColor="#000"
+
+                ></TextView>
 
 
             <TextView
@@ -160,13 +150,57 @@ Men hvor meget mere energi bruger en varebil egentlig? tryk på nedenstående bi
                 android:textColor="#000"></TextView>
 
 
-            <imageButton
-                android:layout_width="384dp"
-                android:layout_height="95dp"
+            <ImageButton
+                android:id="@+id/statistik"
+                android:layout_width="362dp"
+                android:layout_gravity="center"
+                android:layout_height="202dp"
                 android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/billed2"
-
                 />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Som der kan ses bruger benzindrevne varebiler mange gange mere energi end en drone. Dog er det kun en faktorer, som ikke kan bruges til se det store billede. For at måle droners co2-fodaftryk, når det komme til udlevering af pakker, skal antal pakke leveringer mulig pr. km tælles med, samt skal udledning af emissioner for hele teknologiens livscyklus (dette inkluderer produktion af batteri, forbrænding af brændstof osv.). Når det hele tælles sammen er det som følgende: "
+                android:layout_marginTop="10dp"
+                android:textColor="#000"></TextView>
+
+
+
+
+            <ImageButton
+                android:id="@+id/diagram"
+                android:layout_width="362dp"
+                android:layout_gravity="center"
+                android:layout_height="202dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diagram"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Som det kan ses ovenfor så udleder dronen altså også mindre pr. pakke i det store perspektiv, selvom dens kapacitet er så lille. Dronelevering er altså er altså uanset, hvordan du vender og drejer det, et grønnere alternativ til den pakkelevering som vi har i dag.
+\n
+\n
+Mange mennesker har svært ved at stole på autonome droner til at levere deres dyre og skrøbelige pakker, og der opstår mange problemer med dansk lovgivning der ikke tillader droner til at flyve frit og er meget begrænset især inden for byområder. Dette er nogle af grundene til at droner ikke bliver brugt i post branchen i dag.
+\n
+\n
+Men forvent at denne droneteknologi kan være en realitet, og den er nok tættere på end du tror!"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"></TextView>
+
 
             <ImageButton
                 android:id="@+id/thumb_button_1"
@@ -174,6 +208,8 @@ Men hvor meget mere energi bruger en varebil egentlig? tryk på nedenstående bi
                 android:layout_width="100dp"
                 android:layout_height="75dp"
                 android:src="@drawable/book" />
+
+
         </LinearLayout>
     </ScrollView>
 
